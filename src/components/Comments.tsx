@@ -17,7 +17,8 @@ const Comments = ({ comments }: CommentsProps) => {
   const sliceNumber = showMore ? comments.length : 2;
 
   return (
-    <div>
+    <div className="space-y-3 ">
+      <h4 className="text-xl font-bold text-gray-500 mt-5">Comments:</h4>
       {comments
         .sort(
           (a: any, b: any) =>

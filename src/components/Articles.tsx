@@ -9,7 +9,7 @@ const Articles = () => {
   }
   
   return (
-    <div>
+    <div className="max-w-4xl mx-auto space-y-5">
       {isLoading && articles.map((article)=> (
         <Article key={article.id} article={article} />
       ))}

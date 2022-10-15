@@ -1,8 +1,13 @@
-import React from "react";
 import Articles from "./components/Articles";
+import Header from "./components/Header";
 
 const App = () => {
-  return <Articles />;
+  return (
+    <div className="font-poppins">
+      <Header />
+      <Articles />
+    </div>
+  );
 };
 
 export default App;
