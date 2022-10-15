@@ -1,8 +1,8 @@
 import React from "react";
-import Application from "./components/Application";
+import Articles from "./components/Articles";
 
-const App: React.FC = () => {
-  return <Application />;
-}
+const App = () => {
+  return <Articles />;
+};
 
 export default App;

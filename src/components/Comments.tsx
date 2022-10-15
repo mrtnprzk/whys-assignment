@@ -1,10 +1,15 @@
-import React from 'react'
+import { CommentType } from "../../types";
 
-const Comments: React.FC = () => {
+interface CommentsProps {
+  comments: CommentType[];
+}
+
+const Comments = ({comments}: CommentsProps) => {
   return (
     <div>
-        <h2>Comments</h2>
-        <button>Show More</button>
+        {comments.map((comment) => (
+        <p key={comment.id}>{comment.text}</p>
+      ))}
     </div>
   )
 }
