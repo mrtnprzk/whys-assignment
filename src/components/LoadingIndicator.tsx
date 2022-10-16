@@ -1,6 +1,6 @@
 const LoadingIndicator = () => {
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center items-center py-10">
       <div className="spinner space-x-3">
         <div className="bounce1"></div>
         <div className="bounce2"></div>

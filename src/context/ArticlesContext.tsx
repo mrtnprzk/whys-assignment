@@ -14,14 +14,14 @@ export const useArticle = () => {
 
 export const ArticleProvider = ({ children }: ArticleContextProps) => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const getArticles = async () => {
     try {
       const result = await articlesData;
       setArticles(result);
       if (result) {
-        setIsLoading(true);
+        setIsLoading(false);
       }
     } catch (error) {
       console.log(error);

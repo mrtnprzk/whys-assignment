@@ -6,11 +6,15 @@ interface ArticleProps {
 }
 
 const Article = ({ article }: ArticleProps) => {
-  const comments = article?.comments.length !== 0 && <Comments comments={article.comments}/>
+  const comments = article?.comments.length !== 0 && (
+    <Comments comments={article.comments} />
+  );
 
   return (
     <div className="m-5 p-5 border-2 rounded-xl shadow-md">
-      <h3 className="text-[#4863FE] text-2xl font-bold">Article by {article.author}</h3>
+      <h3 className="text-[#4863FE] text-2xl font-bold">
+        Article by {article.author}
+      </h3>
       <p>{article.text}</p>
       {comments}
     </div>
