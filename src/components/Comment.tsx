@@ -11,7 +11,7 @@ const Comment = ({ comment }: CommentProps) => {
     <div className="border border-[#5B72FB] rounded p-2">
       <div className="flex space-x-2">
         <AccountCircleIcon className="text-[#4863FE]" fontSize="large" />
-        <p className="mt-2">{comment?.text}</p>
+        <p className="mt-1.5">{comment?.text}</p>
       </div>
       <div className="text-right">
         <span className="text-xs text-gray-400">

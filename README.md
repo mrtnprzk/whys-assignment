@@ -24,8 +24,8 @@ Napiš to v Reactu tak, jak to umíš. Pokud možno, piš to funkcionálně (ne 
 Jak to má vypadat:
 
 - vytvoř komponenty, které vykreslí článek a komentáře
-- vytvoř komponentu `Articles` která vykreslí ty dvě komponenty a ještě tlačítko pro načtení dalších komentářů (zobraz až po získání a vykreslení komentářů)
-- komponenta `Articles` bude získávat data (článek a komentáře
+- vytvoř komponentu `Articles` která vykreslí ostatní komponenty a ještě tlačítko pro načtení dalších komentářů (zobraz až po získání a vykreslení komentářů)
+- komponenta `Articles` bude získávat data (článek a komentáře)
 - simuluj získání dat asynchronním kódem (zobrazí se po nějaké době)
 - data jsou definovana v `src/data/articles.json`, dostupné globálně
 

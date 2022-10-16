@@ -1,6 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import articlesData from "../data/articles.json";
-import { ArticleContextType, ArticleContextProps, ArticleType } from "../../types";
+import {
+  ArticleContextType,
+  ArticleContextProps,
+  ArticleType,
+} from "../../types";
 
 const ArticleContext = createContext({} as ArticleContextType);
 
@@ -14,15 +18,18 @@ export const ArticleProvider = ({ children }: ArticleContextProps) => {
 
   const getArticles = async () => {
     try {
-      await setArticles(articlesData);
+      const result = await articlesData;
+      setArticles(result);
+      if (result) {
+        setIsLoading(true);
+      }
     } catch (error) {
       console.log(error);
-    } 
+    }
   };
 
   useEffect(() => {
     getArticles();
-    setIsLoading(true);
   }, []);
 
   return (
